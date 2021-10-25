@@ -1,3 +1,11 @@
+<!-- CHÚ Ý -->
+Cài npm i sau đó cài thêm 
+npm i -D @angular-builders/custom-webpack
+
+<!-- Run project -->
+npm run start:shell
+npm run start:mailbox
+npm run start:calendar
 # AcmeEmailClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
@@ -28,11 +36,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-<!-- CHÚ Ý -->
-Cài npm i sau đó cài thêm 
-npm i -D @angular-builders/custom-webpack
-
-<!-- Run project -->
-npm run start:shell
-npm run start:mailbox
-npm run start:calendar
