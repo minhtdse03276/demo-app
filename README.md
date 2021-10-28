@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 <!-- CHÚ Ý -->
 Cài npm i sau đó cài thêm 
 npm i -D @angular-builders/custom-webpack
@@ -6,6 +8,7 @@ npm i -D @angular-builders/custom-webpack
 npm run start:shell
 npm run start:mailbox
 npm run start:calendar
+>>>>>>> e288cf16a485fdc8aae3b2f25b8e1c4094459241
 # AcmeEmailClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
@@ -33,6 +36,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> e288cf16a485fdc8aae3b2f25b8e1c4094459241
