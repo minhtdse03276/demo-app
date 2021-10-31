@@ -1,19 +1,21 @@
 import { Action, createReducer, on } from '@ngrx/store';
-import { multiplyByAmount } from './counter.actions';
+import { decrement, increment, incrementByAmount } from './counter.actions';
 
 export interface CounterState {
-  remoteCount: number;
+  count: number;
 }
 
 export const initialState: CounterState = {
-  remoteCount: 1,
+  count: 0,
 };
 
 export const counterReducer = createReducer(
   initialState,
-  on(multiplyByAmount, (state, { amount }) => ({
+  on(increment, (state) => ({ ...state, count: state.count + 1 })),
+  on(decrement, (state) => ({ ...state, count: state.count - 1 })),
+  on(incrementByAmount, (state, { amount }) => ({
     ...state,
-    remoteCount: state.remoteCount * amount,
+    count: state.count + amount,
   }))
 );
 
