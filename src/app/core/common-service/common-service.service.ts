@@ -40,7 +40,7 @@ export class CommonServiceService {
    * Get JWT token
    * @returns Token
    */
-  static getClientMessageId(): string {
+  public getClientMessageId(): string {
     return uuidv4();;
   }
 
@@ -222,7 +222,7 @@ export class CommonServiceService {
     return new HttpHeaders({
       'Content-Type': this.contentType,
       'Authorization': this.getJwtToken(),
-      'ClientMessageId': CommonServiceService.getClientMessageId()
+      'ClientMessageId': this.getClientMessageId()
     });
   }
 }
