@@ -8,5 +8,7 @@ export const counterSelector = createFeatureSelector<AppState, CounterState>(
 
 export const countSelector = createSelector(
   counterSelector,
-  (counterState: CounterState) => counterState.remoteCount
+  (counterState: CounterState) => {
+    return counterState? counterState.remoteCount : 0
+  }
 );

@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
-import { reducer } from 'src/app/counter/counter.reducers';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { reducer } from 'src/app/counter/counter.reducers';
     RouterModule.forRoot(APP_ROUTES),
     FormsModule,
     StoreModule.forRoot({}),
-    StoreModule.forFeature('remotecounter', reducer),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
   ],
   providers: [],
